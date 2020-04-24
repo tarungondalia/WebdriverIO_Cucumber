@@ -17,7 +17,6 @@ const stockAvailibilityPhone = '//*[@class = "gfdCompanyDetailsTitle" and text()
 
 export const extractFirstCompanyData = () => {
     let data = {};
-    // browser.pause(500);
     let companyList = $$(companylist);
     if (companyList.length >= 1) {
         console.log(companyList.length)
@@ -75,7 +74,6 @@ export const extractFirstCompanyData = () => {
 
 export const extractThirdCompanyData = () => {
     let data = {};
-    // browser.pause(500);
     let companyList = $$(companylist);
     if (companyList.length >= 3) {
         console.log(companyList.length)
@@ -133,7 +131,6 @@ export const extractThirdCompanyData = () => {
 
 export const extractLastCompanyData = () => {
     let data = {};
-    // browser.pause(500);
     let companyList = $$(companylist);
     if (companyList.length >= 4) {
         console.log(companyList.length)
