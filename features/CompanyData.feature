@@ -34,5 +34,8 @@ Feature: Company Data Capture
             |         U         |
             |         V         |
             |         W         |
+            |         X         |
+            |         Y         |
             |         Z         |
+            |       0-9         |
 

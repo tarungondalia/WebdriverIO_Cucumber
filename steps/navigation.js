@@ -9,17 +9,24 @@ Given('I navigate to company list page starting with {string}', (path) => {
     global.currentstartLetter = path;
 });
 
-
 When('I collect the data for First Company',()=>{
     companyPage.extractFirstCompanyData();
 });
 
 When('I collect the data for Third Company',()=>{
-    browser.back();
+    let elem = $('//*[@class = "gfdCompanyDetailsTitle" and text()= "Address"]');
+    let isDisplayed = elem.isDisplayed();
+    if(isDisplayed == true){
+        browser.back();
+    }
     companyPage.extractThirdCompanyData();
 });
 
 When('I collect the data for Last Company',()=>{
-    browser.back();
+    let elem  = $('//*[@class = "gfdCompanyDetailsTitle" and text()= "Address"]');
+    let isDisplayed = elem.isDisplayed();
+    if(isDisplayed == true){
+        browser.back();
+    }
     companyPage.extractLastCompanyData();
 });
